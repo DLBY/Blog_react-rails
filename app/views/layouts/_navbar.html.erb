@@ -1,0 +1,14 @@
+<nav class="flex flex-col w-full fixed top-0 bg-gray-100 border-b-4 border-blue-500 h-28 justify-between items-center sm:flex-row px-4 sm:px-6 py-1 shadow sm:shadow-none">
+  <div class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
+   <a class="font-bold text-lg py-1" href="/"><span class="text-3xl"> THP</span> | Blogging Project</a>
+      <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();">
+      <span class="hamburger__top-bun"></span><span class="hamburger__bottom-bun"></span>
+      </button>
+  </div>
+  <div class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
+    <a href="/" class="text-dark font-bold hover:text-red text-lg w-full sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2">Home</a>
+    <a href="/" class="text-dark font-bold hover:text-red text-lg w-full sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2">Connexion</a>
+  </div>
+</nav>
+
+<%= javascript_pack_tag 'hamburger' %>

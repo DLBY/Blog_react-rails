@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Articles</h1>
+<h1 class="font-semibold text-4xl my-8 pt-28">Articles</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
+      <th class="title_table">Title</th>
+      <th class="title_table">Content</th>
+      <th class="title_table" colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @articles.each do |article| %>
       <tr>
-        <td><%= article.title %></td>
-        <td><%= article.content %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="content_table"><%= article.title %></td>
+        <td class="content_table"><%= article.content %></td>
+        <td class="content_table"><%= link_to 'Show', article %></td>
+        <td class="content_table"><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td class="content_table"><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
